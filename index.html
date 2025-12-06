@@ -5,40 +5,40 @@
     <meta charset="utf-8">
     <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
     <!-- Replace the content tag with appropriate information -->
-    <meta name="description" content="Detail Enhanced Gaussian Splatting for Large-Scale Volumetric Capture">
-    <meta property="og:title" content="Detail Enhanced Gaussian Splatting" />
-    <meta property="og:description" content="Detail Enhanced Gaussian Splatting for Large-Scale Volumetric Capture" />
+    <meta name="description" content="Lighting in Motion: Spatiotemporal HDR Lighting Estimation">
+    <meta property="og:title" content="Lighting in Motion" />
+    <meta property="og:description" content="Spatiotemporal HDR Lighting Estimation" />
     <!-- Path to banner image. Optimal dimenssions are 1200X630-->
-    <meta property="og:image" content="https://eyeline-labs.github.io/DEGS/degs_static/images/degs_banner_og.jpg" />
+    <meta property="og:image" content="https://eyeline-labs.github.io/DEGS/limo_static/images/degs_banner_og.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Detail Enhanced Gaussian Splatting">
-    <meta name="twitter:description" content="Detail Enhanced Gaussian Splatting for Large-Scale Volumetric Capture">
-    <meta name="twitter:image" content="https://eyeline-labs.github.io/DEGS/degs_static/images/degs_banner_og.jpg">
+    <meta name="twitter:title" content="Lighting in Motion">
+    <meta name="twitter:description" content="Lighting in Motion: Spatiotemporal HDR Lighting Estimation">
+    <meta name="twitter:image" content="https://eyeline-labs.github.io/DEGS/limo_static/images/degs_banner_og.jpg">
 
     <!-- Keywords for your paper to be indexed by -->
     <meta name="keywords"
-        content="DEGS, super resolution, gaussian splatting, detail enhancement, diffusion, denoising diffusion, GS, 4DGS, image processing, machine learning, rasterization, image based rendering, VFX, SIGGRAPH Asia, SIGGRAPH Asia 2025">
+        content="Lighting in Motion, spatiotemporal HDR, lighting estimation, HDR lighting, computer vision, machine learning, image processing, VFX">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-    <title>DEGS</title>
-    <link rel="icon" type="image/x-icon" href="degs_static/favicon/favicon.ico">
-    <link rel="icon" type="image/png" href="degs_static/favicon/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/svg+xml" href="degs_static/favicon/favicon.svg">
-    <link rel="apple-touch-icon" sizes="180x180" href="degs_static/favicon/apple-touch-icon.png">
-    <link rel="manifest" href="degs_static/favicon/site.webmanifest">
-    <link rel="mask-icon" href="degs_static/favicon/safari-pinned-tab.svg" color="#ffffff">
+    <title>Lighting in Motion</title>
+    <link rel="icon" type="image/x-icon" href="limo_static/favicon/favicon.ico">
+    <link rel="icon" type="image/png" href="limo_static/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="limo_static/favicon/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="limo_static/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="limo_static/favicon/site.webmanifest">
+    <link rel="mask-icon" href="limo_static/favicon/safari-pinned-tab.svg" color="#ffffff">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="stylesheet" href="degs_static/css/bulma.min.css">
-    <link rel="stylesheet" href="degs_static/css/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="degs_static/css/academicons-1.9.4/css/academicons.min.css">
-    <link rel="stylesheet" href="degs_static/css/index.css">
-    <script src="degs_static/js/jquery.min.js"></script>
-    <script defer src="degs_static/js/fontawesome.all.min.js"></script>
+    <link rel="stylesheet" href="limo_static/css/bulma.min.css">
+    <link rel="stylesheet" href="limo_static/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="limo_static/css/academicons-1.9.4/css/academicons.min.css">
+    <link rel="stylesheet" href="limo_static/css/index.css">
+    <script src="limo_static/js/jquery.min.js"></script>
+    <script defer src="limo_static/js/fontawesome.all.min.js"></script>
 </head>
 
 <body>
@@ -49,53 +49,30 @@
             <div class="container is-max-desktop">
                 <div class="columns is-centered">
                     <div class="column has-text-centered">
-                        <h1 class="title is-1 publication-title" style="font-size: 46px;">Detail Enhanced Gaussian
-                            Splatting</h1>
+                        <h1 class="title is-1 publication-title" style="font-size: 46px;">Lighting in Motion</h1>
                         <h3 class="title is-3 publication-title" style="font-size: 32px; margin-top: -20px;">
-                            for Large-Scale Volumetric Capture
+                            Spatiotemporal HDR Lighting Estimation
                         </h3>
-                        <span style="font-size: 18px;">
-                            <a href="https://asia.siggraph.org/2025/" target="_blank" style="color: #000;">
-                                SIGGRAPH Asia 2025, Hong Kong
-                            </a>
-                        </span>
                         <br>
                         <br>
                         <div class="is-size-5 publication-authors">
                             <!-- Paper authors -->
+                              <span class="author-block">
+                                <a href="https://christophebolduc.ca/" target="_blank">Christophe
+                                    Bolduc</a>,</span>
                             <span class="author-block">
                                 <a href="https://julienphilip.com/" target="_blank">Julien
-                                    Philip</a><sup>*</sup>,</span>
+                                    Philip</a>,</span>
                             <span class="author-block">
                                 <a href="https://limacv.github.io/homepage/" target="_blank">Li
-                                    Ma</a><sup>*</sup>,</span>
-                            <span class="author-block">
-                                <a href="mailto:pascal.clausen@scanlinevfx.com" target="_blank">Pascal
-                                    Clausen</a><sup>*</sup>,</span>
-                            <span class="author-block">
-                                <a href="https://www.cs.cornell.edu/~wenqixian/" target="_blank">Wenqi
-                                    Xian</a><sup>*</sup>,</span><br>
-                            <span class="author-block">
-                                <a href="https://leventtasel.com" target="_blank">Ahmet Levent Taşel</a>,</span>
+                                    Ma</a>,</span>
                             <span class="author-block">
                                 <a href="https://mingminghe.com" target="_blank">Mingming He</a>,</span>
                             <span class="author-block">
-                                <a href="mailto:xueming.yu@scanlinevfx.com" target="_blank">Xueming Yu</a>,</span>
-                            <span class="author-block">
-                                <a href="mailto:david.george@scanlinevfx.com" target="_blank">David M.
-                                    George</a>,</span><br>
-                            <span class="author-block">
-                                <a href="https://ningyu1991.github.io" target="_blank">Ning Yu</a>,</span>
-                            <span class="author-block">
-                                <a href="mailto:oliver.pilarski@scanlinevfx.com" target="_blank">Oliver
-                                    Pilarski</a>,</span>
-                            <span class="author-block">
                                 <a href="https://www.pauldebevec.com/Bio/" target="_blank">Paul Debevec</a></span>
-                            <span class="eql-cntrb">
-                                <small>
-                                    <br><sup>*</sup>These authors made equal technical contributions.
-                                </small>
-                            </span>
+                            <span class="author-block">
+                                <a href="https://vision.gel.ulaval.ca/~jflalonde/" target="_blank">Jean-François Lalonde</a></span>
+
                         </div>
 
                         <a href="https://eyelinestudios.com/en/labs" target="_blank" style="color: #000;">
@@ -130,14 +107,14 @@
                                 </span>
                                 <br>
                             </div> -->
-                            <img src="degs_static/images/labs_logo.png" alt="Eyeline Labs" style="height: 50px;">
+                            <img src="limo_static/images/labs_logo.png" alt="Eyeline Labs" style="height: 50px;">
                         </a>
 
                         <div class="column has-text-centered">
                             <div class="publication-links">
                                 <!-- Main PDF link -->
                                 <span class="link-block">
-                                    <a href="degs_static/pdfs/DEGS.pdf" target="_blank"
+                                    <a href="limo_static/pdfs/LiMo.pdf" target="_blank"
                                         class="external-link button is-normal is-rounded is-dark">
                                         <span class="icon">
                                             <i class="fas fa-file-pdf"></i>
@@ -145,45 +122,10 @@
                                         <span>Paper</span>
                                     </a>
                                 </span>
-
-                                <!-- Supplemental PDF link -->
-                                <span class="link-block">
-                                    <a href="degs_static/pdfs/DEGS_Supp.pdf" target="_blank"
-                                        class="external-link button is-normal is-rounded is-dark">
-                                        <span class="icon">
-                                            <i class="fas fa-file-pdf"></i>
-                                        </span>
-                                        <span>Supplemental</span>
-                                    </a>
-                                </span>
-
-                                <!-- ACM Digital Library PDF link -->
-                                <span class="link-block">
-                                    <!-- TODO -->
-                                    <a href="https://dl.acm.org/doi/10.1145/3763336" target="_blank"
-                                        class="external-link button is-normal is-rounded is-dark">
-                                        <span class="icon">
-                                            <i class="ai ai-acmdl"></i>
-                                        </span>
-                                        <span>ACM</span>
-                                    </a>
-                                </span>
-
-                                <!-- ArXiv abstract Link -->
-                                <span class="link-block">
-                                    <!-- TODO -->
-                                    <a href="https://arxiv.org/abs/2511.21697" target="_blank"
-                                        class="external-link button is-normal is-rounded is-dark">
-                                        <span class="icon">
-                                            <i class="ai ai-arxiv"></i>
-                                        </span>
-                                        <span>arXiv</span>
-                                    </a>
-                                </span>
                             </div>
                         </div>
-                        <video poster="" id="tree" autoplay controls muted loop width="100%">
-                            <source autoplay muted loop controls src="degs_static/videos/banner_video_short.mp4"
+                        <video poster="" id="tree" autoplay controls muted loop width="50%">
+                            <source autoplay muted loop controls src="limo_static/videos/short_video.mov"
                                 type="video/mp4">
                         </video>
                     </div>
@@ -200,28 +142,13 @@
                     <h2 class="title is-3">Abstract</h2>
                     <div class="content has-text-justified">
                         <p>
-                            We present a unique system for large-scale, multi-performer, high resolution 4D volumetric
-                            capture providing realistic free-viewpoint video up to and including 4K resolution facial
-                            closeups.
-                            To achieve this, we employ a novel volumetric capture, reconstruction and rendering pipeline
-                            based on Dynamic Gaussian Splatting and Diffusion-based Detail Enhancement.
-                            We design our pipeline specifically to meet the demands of high-end media production.
-                            We employ two capture rigs: the Scene Rig, which captures multi-actor performances at a
-                            resolution which falls short of 4K production quality, and the Face Rig, which records
-                            high-fidelity single-actor facial detail to serve as a reference for detail enhancement.
-                            We first reconstruct dynamic performances from the Scene Rig using 4D Gaussian Splatting,
-                            incorporating new model designs and training strategies to improve reconstruction, dynamic
-                            range, and rendering quality.
-                            Then to render high-quality images for facial closeups, we introduce a diffusion-based
-                            detail enhancement model.
-                            This model is fine-tuned with high-fidelity data from the same actors recorded in the Face
-                            Rig.
-                            We train on paired data generated from low- and high-quality Gaussian Splatting (GS) models,
-                            using the low-quality input to match the quality of the Scene Rig, with the high-quality GS
-                            as ground truth.
-                            Our results demonstrate the effectiveness of this pipeline in bridging the gap between the
-                            scalable performance capture of a large-scale rig and the high-resolution standards required
-                            for film and media production.
+                            We present LiMo, a diffusion-based approach to spatiotemporal lighting estimation.
+                            LiMo targets both realistic high-frequency detail prediction and accurate illuminance estimation.
+                            To account for both, we propose generating a set of mirrored and diffuse spheres at different exposures, based on their 3D positions in the input.
+                            Making use of diffusion priors, we fine-tune powerful existing diffusion models on a large-scale customized dataset of indoor and outdoor scenes, paired with spatiotemporal light probes.
+                            For accurate spatial conditioning, we demonstrate that depth alone is insufficient and we introduce a new geometric condition to provide the relative position of the scene to the target 3D position.
+                            Finally, we combine diffuse and mirror predictions at different exposures into a single HDRI map leveraging differentiable rendering.
+                            We thoroughly evaluate our method and design choices to establish LiMo as state-of-the-art for both spatial control and prediction accuracy.
                         </p>
                     </div>
                 </div>
@@ -240,36 +167,16 @@
             </div>
             <div class="content has-text-justified">
                 <p>
-                    Actors perform in the Scene Rig, where full-body performances are captured.
-                    Using our Poly4DGS framework, we reconstruct the performance.
-                    The same actors are then captured in the Face Rig.
-                    We generate Poly4DGS models for a portion of their facial performance: a high-quality model (HQGS,
-                    4M Gaussians) and a low-quality model (LQGS, 50K-200K Gaussians).
-                    These reconstructions are used to train an Image Enhancement Module which refines the renderings of
-                    the low-quality GS to be like the high quality one.
-                    Finally, the trained model is used to enhance renderings from the 4DGS performance.
+                    From an input image or sequence of images, along with a given 3D target location, we first use off-the-shelf depth predictor and fov estimator to compute the 3D position per pixel.
+                    We then compute our condition maps: masked input image, depth, normals of the sphere, and our proposed distance and direction to the sphere for each pixel.
+                    These conditions are then fed to our diffusion model to generate the mirrored and diffuse spheres at multiple exposures.
+                    Finally, we optimized these spheres into a single HDRI map using differentiable rendering.
                 </p>
             </div>
             <br>
             <div class="columns is-centered has-text-centered">
                 <div class="column has-text-centered">
-                    <img src="degs_static/images/method_oveview.jpg" alt="Method Overview">
-                </div>
-            </div>
-            <br>
-            <br>
-            <div class="content has-text-justified">
-                <p>
-                    Architectural changes made to the base Flux model.
-                    Starting from the Latent Diffusion Architecture, we add input channels to condition the network.
-                    To improve temporal stability and generate an alpha channel, we condition our model on the previous
-                    warped output, a validity mask, and both the LQ RGB and Alpha.
-                    We also double the size of the latent space to predict RGB and Alpha jointly.
-                </p>
-            </div>
-            <div class="columns is-centered has-text-centered">
-                <div class="column has-text-centered">
-                    <img src="degs_static/images/method_fig4.png" alt="Method Overview">
+                    <img src="limo_static/images/pipeline.jpg" alt="Method Overview">
                 </div>
             </div>
             <br>
@@ -283,20 +190,22 @@
         <div class="columns is-centered has-text-centered">
             <h2 class="title is-4">Longer Video</h2>
         </div>
-        <div class="container is-max-desktop" style="width: 100%;">
+       <div class="container is-max-desktop" style="width: 100%;">
             <div class="columns is-centered has-text-centered" style="width: 100%;">
                 <div class="column has-text-centered" style="width: 100%;">
-                    <div style="padding:56.25% 0 0 0;position:relative;">
-                        <iframe
-                            src="https://player.vimeo.com/video/1131536790?h=c816263ea7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;quality=4k"
-                            frameborder="0"
-                            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin"
-                            style="position:absolute;top:0;left:0;width:100%;height:100%;"
-                            title="Eyeline Labs | Detail Enhanced Gaussian Splatting for Large-Scale Volumetric Capture | Research Paper">
-                        </iframe>
+
+                    <!-- Responsive wrapper -->
+                    <div style="padding:56.25% 0 0 0; position:relative;">
+                        <video
+                            controls
+                            preload="metadata"
+                            style="position:absolute; top:0; left:0; width:100%; height:100%;"
+                        >
+                            <source src="limo_static/videos/long_video.mov" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
-                    <script src="https://player.vimeo.com/api/player.js"></script>
+
                 </div>
             </div>
         </div>
@@ -312,20 +221,7 @@
 @article{DEGS,
     author = {Philip, Julien and Ma, Li and Clausen, Pascal and Xian, Wenqi and Ta\c{s}el, Ahmet Levent and He, Mingming and Yu, Xueming and George, David M. and Yu, Ning and Pilarski, Oliver and Debevec, Paul},
     title = {Detail Enhanced Gaussian Splatting for Large-Scale Volumetric Capture},
-    year = {2025},
-    issue_date = {December 2025},
-    publisher = {Association for Computing Machinery},
-    address = {New York, NY, USA},
-    volume = {44},
-    number = {6},
-    issn = {0730-0301},
-    url = {https://doi.org/10.1145/3763336},
-    doi = {10.1145/3763336},
-    journal = {ACM Trans. Graph.},
-    month = dec,
-    articleno = {250},
-    numpages = {13},
-    keywords = {gaussian splatting, super resolution}
+    year = {2025}
 }    
             </code></pre>
         </div>

@@ -1,0 +1,193 @@
+/* noto-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('noto-sans-v36-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+
+.footer .icon-link {
+  font-size: 25px;
+  color: #000;
+}
+
+.link-block a {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.dnerf {
+  font-variant: small-caps;
+}
+
+
+.teaser .hero-body {
+  padding-top: 0;
+  padding-bottom: 3rem;
+}
+
+.teaser {
+  font-family: 'Google Sans', sans-serif;
+}
+
+
+.publication-title {}
+
+.publication-banner {
+  max-height: parent;
+
+}
+
+.publication-banner video {
+  position: relative;
+  left: auto;
+  top: auto;
+  transform: none;
+  object-fit: fit;
+}
+
+.publication-header .hero-body {}
+
+.publication-title {
+  font-family: 'Google Sans', sans-serif;
+}
+
+.publication-authors {
+  font-family: 'Google Sans', sans-serif;
+}
+
+.publication-venue {
+  color: #555;
+  width: fit-content;
+  font-weight: bold;
+}
+
+.publication-awards {
+  color: #ff3860;
+  width: fit-content;
+  font-weight: bolder;
+}
+
+.publication-authors {}
+
+.publication-authors a {
+  color: hsl(204, 86%, 53%) !important;
+}
+
+.publication-authors a:hover {
+  text-decoration: underline;
+}
+
+.author-block {
+  display: inline-block;
+}
+
+.publication-banner img {}
+
+.publication-authors {
+  /*color: #4286f4;*/
+}
+
+.publication-video {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+
+  overflow: hidden;
+  border-radius: 10px !important;
+}
+
+.publication-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.publication-body img {}
+
+.results-carousel {
+  overflow: hidden;
+}
+
+.results-carousel .item {
+  margin: 5px;
+  overflow: hidden;
+  padding: 20px;
+  font-size: 0;
+}
+
+.results-carousel video {
+  margin: 0;
+}
+
+.slider-pagination .slider-page {
+  background: #000000;
+}
+
+.eql-cntrb {
+  font-size: smaller;
+}
+
+.slider-container {
+  position: relative;
+  width: 256px;
+  height: 455px;
+  cursor: grab;
+}
+
+.slider-container:active {
+  cursor: grabbing;
+}
+
+.slider-container:focus {
+  outline: none;
+}
+
+.openseadragon-container :focus {
+  outline: none;
+}
+
+.osgouter {
+  background-color: #000;
+
+  border-radius: 4%;
+  border: 3px solid #000;
+  /* box-sizing: border-box; */
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2), 0 0 4px rgba(0, 0, 0, 0.6);
+
+  overflow: hidden;
+  width: 256px;
+  height: 455px;
+}
+
+.slider-handle {
+  position: absolute;
+
+  height: 32px;
+  width: 32px;
+
+  /* center the element */
+  left: 50%;
+  top: 85%;
+
+  margin-left: -16px;
+  margin-top: -16px;
+
+  background: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http:/www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve"><g><g><polygon points="45.293,15.74 61.586,32.033 45.293,48.326 46.854,49.74 64,32.74 64,31.325 46.854,14.326"/><polygon points="17.146,14.26 0,31.26 0,32.674 17.146,49.674 18.634,48.261 2.377,31.967 18.615,15.674"/><path d="M32,26.032c-3.309,0-6,2.691-6,6c0,3.309,2.691,6,6,6s6-2.691,6-6S35.309,26.032,32,26.032z M32,36.033 c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S34.206,36.033,32,36.033z"/></g></g></svg>') no-repeat center center;
+  filter: invert(75%) drop-shadow(0px 0px 1px rgba(0, 0, 0, .99));
+  cursor: move;
+  z-index: 2;
+}
+
+.slider-handle.draggable {
+  background-color: #445b7c;
+}
