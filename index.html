@@ -69,7 +69,7 @@
                             <span class="author-block">
                                 <a href="https://mingminghe.com" target="_blank">Mingming He</a>,</span>
                             <span class="author-block">
-                                <a href="https://www.pauldebevec.com/Bio/" target="_blank">Paul Debevec</a></span>
+                                <a href="https://www.pauldebevec.com/Bio/" target="_blank">Paul Debevec</a>,</span>
                             <span class="author-block">
                                 <a href="https://vision.gel.ulaval.ca/~jflalonde/" target="_blank">Jean-François Lalonde</a></span>
 
@@ -124,10 +124,7 @@
                                 </span>
                             </div>
                         </div>
-                        <video poster="" id="tree" autoplay controls muted loop width="50%">
-                            <source autoplay muted loop controls src="limo_static/videos/short_video.mov"
-                                type="video/mp4">
-                        </video>
+                        <img src="limo_static/images/teaser.jpg" alt="LiMo Teaser" style="width: 100%;">
                     </div>
                 </div>
             </div>
@@ -165,6 +162,13 @@
             <div class="columns is-centered has-text-centered">
                 <h2 class="title is-4">Pipeline Overview</h2>
             </div>
+            <br>
+            <div class="columns is-centered">
+                <video poster="" id="tree" autoplay muted loop width="50%">
+                    <source autoplay muted loop controls src="limo_static/videos/short_video.mov"
+                        type="video/mp4">
+                </video>
+            </div>
             <div class="content has-text-justified">
                 <p>
                     From an input image or sequence of images, along with a given 3D target location, we first use off-the-shelf depth predictor and fov estimator to compute the 3D position per pixel.
@@ -179,6 +183,39 @@
                     <img src="limo_static/images/pipeline.jpg" alt="Method Overview">
                 </div>
             </div>
+            
+            <br>
+            <br>
+        </div>
+    </section>
+    <!-- End Method Overview -->
+
+    <!-- Pipeline Overview -->
+    <section class="section hero">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <h2 class="title is-4">Novel geometry conditioning</h2>
+            </div>
+            <br>
+            <div class="content has-text-justified">
+                <p>
+                    One of our key contributions is the introduction of novel geometry-based conditioning inputs for our diffusion model.
+                    We found that depth alone is insufficient to accurately capture the spatiality of the lighting estimation.
+                    Therefore, we introduce two additional conditions: distance to the target 3D position and direction to the target 3D position.
+                    From the estimated depth and fov, we compute the 3D position of each pixel in the input image.
+                    Our novel maps are then computed as the distance and direction from each pixel's 3D position to the target 3D location where the lighting is to be estimated.
+                    Additionally, to provide further guidance, the pixels on the sphere in the direction to the sphere map are set as the reflection direction.
+                    These conditions provide the model with more context about the spatial relationship between the scene's geometry and the target location.
+                </p>
+            </div>
+            <br>
+            <div class="columns is-centered">
+                <video poster="" id="tree" autoplay muted loop width="100%">
+                    <source autoplay muted loop controls src="limo_static/videos/geo_ablation.mov"
+                        type="video/mp4">
+                </video>
+            </div>
+            
             <br>
             <br>
         </div>
@@ -189,6 +226,7 @@
     <section class="section hero">
         <div class="columns is-centered has-text-centered">
             <h2 class="title is-4">Longer Video</h2>
+            <br>
         </div>
        <div class="container is-max-desktop" style="width: 100%;">
             <div class="columns is-centered has-text-centered" style="width: 100%;">
@@ -218,9 +256,9 @@
             <h2 class="title">BibTeX</h2>
             <!-- TODO -->
             <pre><code>
-@article{DEGS,
-    author = {Philip, Julien and Ma, Li and Clausen, Pascal and Xian, Wenqi and Ta\c{s}el, Ahmet Levent and He, Mingming and Yu, Xueming and George, David M. and Yu, Ning and Pilarski, Oliver and Debevec, Paul},
-    title = {Detail Enhanced Gaussian Splatting for Large-Scale Volumetric Capture},
+@article{LiMo,
+    author = {Bolduc, Christophe and Philip, Julien and Ma, Li and He, Mingming and Debevec, Paul and Lalonde, Jean-Fran{\c{c}}ois},
+    title = {Lighting in Motion: Spatiotemporal HDR Lighting Estimation},
     year = {2025}
 }    
             </code></pre>
