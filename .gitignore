@@ -1,0 +1,10 @@
+/datasets/
+checkpoints/
+outputs/
+*__pycache__/
+models/Wan-AI/
+video/models/
+*.pyc
+.gradio/
+._DS_Store/
+.DS_Store

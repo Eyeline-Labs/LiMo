@@ -1,0 +1,7 @@
+name: LiMo
+channels:
+  - conda
+  - defaults
+dependencies:
+  - python=3.10
+  - mpi4py
