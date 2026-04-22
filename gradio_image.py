@@ -1724,7 +1724,7 @@ bpy.ops.wm.save_as_mainfile(filepath=blend_path)
                 mask = self.processed_data["sphere_mask"][frame_idx].cuda()  # Take first channel
 
                 #position_map[2,:,:] = -position_map[2,:,:]  # The raw data from the dataloader isn't reversed
-                normal_map[2,:,:] = -normal_map[2,:,:]  # The treatdata function inverts the normal maps
+                #normal_map[2,:,:] = -normal_map[2,:,:]  # The treatdata function inverts the normal maps
                 mask = (mask[0, :, :] > 0).float().unsqueeze(0)  # Binarize mask
 
                 # #resize to 512x512 for optimization
