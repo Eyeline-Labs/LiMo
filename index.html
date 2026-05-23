@@ -2,10 +2,11 @@
 <html>
 
 <head>
+    <title>Lighting in Motion: Spatiotemporal HDR Lighting Estimation</title>
     <meta charset="utf-8">
     <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
     <!-- Replace the content tag with appropriate information -->
-    <meta name="description" content="Lighting in Motion: Spatiotemporal HDR Lighting Estimation">
+    <meta name="description" content="We present LiMo, a diffusion-based approach to spatiotemporal lighting estimation. LiMo targets both realistic high-frequency detail prediction and accurate illuminance estimation. To account for both, we propose generating a set of mirrored and diffuse spheres at different exposures, based on their 3D positions in the input. Making use of diffusion priors, we fine-tune powerful existing diffusion models on a large-scale customized dataset of indoor and outdoor scenes, paired with spatiotemporal light probes. For accurate spatial conditioning, we demonstrate that depth alone is insufficient and we introduce a new geometric condition to provide the relative position of the scene to the target 3D position. Finally, we combine diffuse and mirror predictions at different exposures into a single HDRI map leveraging differentiable rendering. We thoroughly evaluate our method and design choices to establish LiMo as state-of-the-art for both spatial control and prediction accuracy.">
     <meta property="og:title" content="Lighting in Motion" />
     <meta property="og:description" content="Spatiotemporal HDR Lighting Estimation" />
     <!-- Path to banner image. Optimal dimenssions are 1200X630-->
@@ -256,14 +257,13 @@
 
                     <!-- Responsive wrapper -->
                     <div style="padding:56.25% 0 0 0; position:relative;">
-                        <video
-                            controls
-                            preload="metadata"
-                            style="position:absolute; top:0; left:0; width:100%; height:100%;"
-                        >
-                            <source src="limo_static/videos/long_video.mov" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                        <iframe
+                            src="https://www.youtube.com/embed/he-lhxEmHYk"
+                            style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                            loading="lazy"
+                        ></iframe>
                     </div>
 
                 </div>
