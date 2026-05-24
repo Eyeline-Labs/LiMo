@@ -4,27 +4,41 @@
 <head>
     <title>Lighting in Motion: Spatiotemporal HDR Lighting Estimation</title>
     <meta charset="utf-8">
+    <link rel="canonical" href="https://eyeline-labs.github.io/LiMo/">
+    <meta name="robots" content="index, follow">
     <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
     <!-- Replace the content tag with appropriate information -->
     <meta name="description" content="We present LiMo, a diffusion-based approach to spatiotemporal lighting estimation. LiMo targets both realistic high-frequency detail prediction and accurate illuminance estimation. To account for both, we propose generating a set of mirrored and diffuse spheres at different exposures, based on their 3D positions in the input. Making use of diffusion priors, we fine-tune powerful existing diffusion models on a large-scale customized dataset of indoor and outdoor scenes, paired with spatiotemporal light probes. For accurate spatial conditioning, we demonstrate that depth alone is insufficient and we introduce a new geometric condition to provide the relative position of the scene to the target 3D position. Finally, we combine diffuse and mirror predictions at different exposures into a single HDRI map leveraging differentiable rendering. We thoroughly evaluate our method and design choices to establish LiMo as state-of-the-art for both spatial control and prediction accuracy.">
-    <meta property="og:title" content="Lighting in Motion" />
-    <meta property="og:description" content="Spatiotemporal HDR Lighting Estimation" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Lighting in Motion" />
+    <meta property="og:url" content="https://eyeline-labs.github.io/LiMo/" />
+    <meta property="og:title" content="Lighting in Motion: Spatiotemporal HDR Lighting Estimation" />
+    <meta property="og:description" content="LiMo is a diffusion-based approach to spatiotemporal HDR lighting estimation for realistic virtual object insertion and virtual production." />
     <!-- Path to banner image. Optimal dimenssions are 1200X630-->
-    <meta property="og:image" content="https://eyeline-labs.github.io/DEGS/limo_static/images/degs_banner_og.jpg" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+    <meta property="og:image" content="https://eyeline-labs.github.io/LiMo/limo_static/images/teaser.jpg" />
+    <meta property="og:image:alt" content="Lighting in Motion teaser showing HDR lighting estimation results" />
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lighting in Motion">
-    <meta name="twitter:description" content="Lighting in Motion: Spatiotemporal HDR Lighting Estimation">
-    <meta name="twitter:image" content="https://eyeline-labs.github.io/DEGS/limo_static/images/degs_banner_og.jpg">
+    <meta name="twitter:title" content="Lighting in Motion: Spatiotemporal HDR Lighting Estimation">
+    <meta name="twitter:description" content="LiMo is a diffusion-based approach to spatiotemporal HDR lighting estimation for realistic virtual object insertion and virtual production.">
+    <meta name="twitter:image" content="https://eyeline-labs.github.io/LiMo/limo_static/images/teaser.jpg">
+
+    <meta name="citation_title" content="Lighting in Motion: Spatiotemporal HDR Lighting Estimation">
+    <meta name="citation_author" content="Bolduc, Christophe">
+    <meta name="citation_author" content="Philip, Julien">
+    <meta name="citation_author" content="Ma, Li">
+    <meta name="citation_author" content="He, Mingming">
+    <meta name="citation_author" content="Debevec, Paul">
+    <meta name="citation_author" content="Lalonde, Jean-Francois">
+    <meta name="citation_publication_date" content="2026">
+    <meta name="citation_conference_title" content="IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)">
+    <meta name="citation_pdf_url" content="https://eyeline-labs.github.io/LiMo/limo_static/pdfs/LiMo.pdf">
+    <meta name="citation_arxiv_id" content="2512.13597">
 
     <!-- Keywords for your paper to be indexed by -->
     <meta name="keywords"
-        content="Lighting in Motion, spatiotemporal HDR, lighting estimation, HDR lighting, computer vision, machine learning, image processing, VFX">
+        content="Lighting in Motion, LiMo, spatiotemporal HDR lighting estimation, HDR lighting, computer vision, machine learning, image processing, VFX, virtual production, Eyeline Labs, CVPR 2026">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-    <title>Lighting in Motion</title>
     <link rel="icon" type="image/x-icon" href="limo_static/favicon/favicon.ico">
     <link rel="icon" type="image/png" href="limo_static/favicon/favicon-96x96.png" sizes="96x96">
     <link rel="icon" type="image/svg+xml" href="limo_static/favicon/favicon.svg">
@@ -40,6 +54,43 @@
     <link rel="stylesheet" href="limo_static/css/index.css">
     <script src="limo_static/js/jquery.min.js"></script>
     <script defer src="limo_static/js/fontawesome.all.min.js"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ScholarlyArticle",
+      "name": "Lighting in Motion: Spatiotemporal HDR Lighting Estimation",
+      "headline": "Lighting in Motion: Spatiotemporal HDR Lighting Estimation",
+      "description": "LiMo is a diffusion-based approach to spatiotemporal HDR lighting estimation for realistic virtual object insertion and virtual production.",
+      "url": "https://eyeline-labs.github.io/LiMo/",
+      "image": "https://eyeline-labs.github.io/LiMo/limo_static/images/teaser.jpg",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://eyeline-labs.github.io/LiMo/limo_static/pdfs/LiMo.pdf",
+        "encodingFormat": "application/pdf"
+      },
+      "isPartOf": {
+        "@type": "PublicationIssue",
+        "name": "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2026"
+      },
+      "author": [
+        {"@type": "Person", "name": "Christophe Bolduc", "url": "https://christophebolduc.ca/"},
+        {"@type": "Person", "name": "Julien Philip", "url": "https://julienphilip.com/"},
+        {"@type": "Person", "name": "Li Ma", "url": "https://limacv.github.io/homepage/"},
+        {"@type": "Person", "name": "Mingming He", "url": "https://mingminghe.com"},
+        {"@type": "Person", "name": "Paul Debevec", "url": "https://www.pauldebevec.com/Bio/"},
+        {"@type": "Person", "name": "Jean-Francois Lalonde", "url": "https://vision.gel.ulaval.ca/~jflalonde/"}
+      ],
+      "publisher": [
+        {"@type": "Organization", "name": "Eyeline Labs", "url": "https://eyelinestudios.com/en/labs"},
+        {"@type": "Organization", "name": "Universite Laval", "url": "https://vision.fsg.ulaval.ca/en"}
+      ],
+      "datePublished": "2026",
+      "sameAs": [
+        "https://arxiv.org/abs/2512.13597",
+        "https://github.com/Eyeline-Labs/LiMo"
+      ]
+    }
+    </script>
 </head>
 
 <body>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://eyeline-labs.github.io/LiMo/sitemap.xml
